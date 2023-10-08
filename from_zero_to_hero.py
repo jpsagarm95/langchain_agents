@@ -1,6 +1,8 @@
+from dotenv import load_dotenv
 import os
 from langchain.llms import OpenAI
 
+load_dotenv()
 os.environ['OPENAI_API_KEY']
 
 llm = OpenAI(model='text-davinci-003', temperature=0.9)
